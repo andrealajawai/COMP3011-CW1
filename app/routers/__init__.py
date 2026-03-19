@@ -1,0 +1,1 @@
+from app.routers import artists, albums, analytics
