@@ -165,7 +165,7 @@ Interactive API documentation is available via Swagger UI through:
 
 * [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
-A PDF version of the documentation is included in this repository.
+A PDF version of the documentation is included in docs/api_docs.pdf
 
 ---
 
