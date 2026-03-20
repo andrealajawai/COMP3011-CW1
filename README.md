@@ -28,6 +28,7 @@ The API integrates a public dataset from Kaggle and allows retrieving, filtering
 - Top-rated albums
 - Most-rated albums
 - Genre distribution
+- Artist summary
 - Release year trends
 
 ### Testing & Validation
