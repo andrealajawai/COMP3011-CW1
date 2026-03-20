@@ -3,7 +3,7 @@
 ## Overview
 This project is a RESTful API that provides functionality for managing music data derived from a popular music review website among music enthusiasts, Album of the Year (https://aoty.org). It includes data such as artists and albums, and supports analytical queries on album ratings by users.
 
-The API integrates a public dataset from Kaggle and allows retrieving, filtering, and analysing album data.
+The API integrates a public dataset from Kaggle (https://www.kaggle.com/datasets/tabibyte/aoty-5000-highest-user-rated-albums) and allows retrieving, filtering, and analysing album data.
 
 ---
 
