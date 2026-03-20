@@ -1,3 +1,4 @@
+````markdown
 # Music Discovery and Album Analytics API
 
 ## Overview
@@ -28,7 +29,6 @@ The API integrates a public dataset from Kaggle and allows retrieving, filtering
 - Top-rated albums
 - Most-rated albums
 - Genre distribution
-- Artist summary statistics
 - Release year trends
 
 ### Testing & Validation
@@ -49,92 +49,130 @@ The API integrates a public dataset from Kaggle and allows retrieving, filtering
 ---
 
 ## Project Structure
+
+```text
 app/
 ├── models/
-│ └── __init__.py
-│ └── album.py
-│ └── artist.py
+│   ├── __init__.py
+│   ├── album.py
+│   ├── artist.py
 ├── routers/
-│ └── __init__.py
-│ └── albums.py
-│ └── analytics.py
-│ └── artists.py
-├── routers/
-│ └── __init__.py
-│ └── album.py
-│ └── artist.py
+│   ├── __init__.py
+│   ├── albums.py
+│   ├── analytics.py
+│   ├── artists.py
+├── schemas/
+│   ├── __init__.py
+│   ├── album.py
+│   ├── artist.py
 ├── __init__.py
 ├── database.py
 ├── import_aoty.py
 ├── main.py
+
 data/
 ├── aoty.csv
+
 tests/
 ├── test_api.py
+
 pytest.ini
 README.md
 requirements.txt
+````
 
 ---
 
 ## Setup Instructions
 
-### 1. Clone the repository
+### 1. Clone Repository
+
+```bash
 git clone https://github.com/andrealajawai/COMP3011-CW1.git
 cd COMP3011-CW1
+```
 
-### 2. Create and activate virtual environment
+### 2. Create and Activate Virtual Environment
+
+```bash
 python -m venv venv
 venv\Scripts\activate
+```
 
-### 3. Install dependencies
+### 3. Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
 ---
 
 ## Running the API
 
-### Import dataset:
+### Import Dataset
+
+```bash
 python -m app.import_aoty
+```
 
-### Start the server:
+### Start Server
+
+```bash
 uvicorn app.main:app --reload
+```
 
-### Open in browser:
+### Open in Browser
+
+```text
 http://127.0.0.1:8000/docs
+```
 
 ---
 
-## Running tests
+## Running Tests
 
-### Run:
+### Run
+
+```bash
 pytest
+```
 
 ---
 
-## Example endpoints
+## Example Endpoints
 
 ### Artists
-- GET /artists/
-- POST /artists/
+
+* GET /artists/
+* POST /artists/
 
 ### Albums
-- GET /albums/
-- POST /albums/
+
+* GET /albums/
+* POST /albums/
 
 ### Analytics
-- GET /analytics/top-rated-albums
-- GET /analytics/genre-distribution
-- GET /analytics/release-year-trends
+
+* GET /analytics/top-rated-albums
+* GET /analytics/genre-distribution
+* GET /analytics/release-year-trends
 
 ---
 
-## API documentation
+## API Documentation
+
 Interactive API documentation is available via Swagger UI through:
-- http://127.0.0.1:8000/docs
+
+* [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 A PDF version of the documentation is included in this repository.
 
+---
+
 ## Notes
-- All genres are stored as strings, which may be seemed as a limitation due to the structure of the dataset used.
-- No authentication/user system is implemented.
+
+* All genres are stored as strings, which may be seemed as a limitation due to the structure of the dataset used.
+* No authentication/user system is implemented.
+
+```
+```
