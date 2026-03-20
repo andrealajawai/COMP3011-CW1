@@ -1,4 +1,3 @@
-````markdown
 # Music Discovery and Album Analytics API
 
 ## Overview
@@ -173,6 +172,3 @@ A PDF version of the documentation is included in this repository.
 
 * All genres are stored as strings, which may be seemed as a limitation due to the structure of the dataset used.
 * No authentication/user system is implemented.
-
-```
-```
